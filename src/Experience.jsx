@@ -54,13 +54,13 @@ export default function Experience()
                 <Text
                     onClick={ goDW }
                     font="./Montserrat-Bold.woff"
-                    fontSize={ 0.5 }
+                    fontSize={ 0.35 }
                     position={ [1.5, 0.75, 0.75] }
                     rotation-y={ -1.25 }
                     maxWidth={ 2 }
                     textAlign="center"
                 >
-                    Digital Wand.ru
+                    Заказать 3D в DigitalWand
                 </Text>
             </Float>
         </PresentationControls>
