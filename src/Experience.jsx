@@ -20,7 +20,6 @@ export default function Experience()
             polar={ [-0.4, 0.2] }
             azimuth={ [-1, 0.75] }
             damping={ 0.1 }
-            config= { { mass: 2, tension: 400 } }
         >
             <Float rotationIntensity={ 0.4 }>
                 <rectAreaLight
@@ -34,17 +33,18 @@ export default function Experience()
 
                 <primitive
                     object={ computer.scene }
-                    position-x={ -0.9 }
-                    position-y={ -1.2 }
-                    rotation-x={ -0.3 }
-                    rotation-y={ -0.5 }
-                    rotation-z={ -0.2 }
+                    position-y={ - 1.2 }
+                    // position-x={ -0.9 }
+                    // position-y={ -1.2 }
+                    // rotation-x={ -0.3 }
+                    // rotation-y={ -0.5 }
+                    // rotation-z={ -0.2 }
                 >
                     <Html
                         transform
                         wrapperClass="htmlScreen"
                         distanceFactor={ 1.17 }
-                        position={ [0, 1.56, -1.4] }
+                        position={ [-0.05, 1.56, -1.4] }
                         rotation-x={ -0.256 }
                     >
                         <iframe src="https://digitalwand.ru/" />
