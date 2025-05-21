@@ -1,4 +1,5 @@
-import { Text, Html, ContactShadows, PresentationControls, Environment, useGLTF, Float } from '@react-three/drei'
+import { Text3D, Text, Html, ContactShadows, PresentationControls, Environment, useGLTF, Float } from '@react-three/drei'
+import { MeshBasicMaterial } from 'three';
 
 export default function Experience()
 {
@@ -50,20 +51,20 @@ export default function Experience()
                         <iframe src="https://digitalwand.ru/" />
                     </Html>
                 </primitive>
-                    <Text
+                    <Text3D
                         onPointerOver={() => document.body.style.cursor = 'pointer'}
                         onPointerOut={() => document.body.style.cursor = 'grab'}
                         onClick={ goDW }
-                        font="./Montserrat-Bold.woff"
-                        fontSize={ 0.35 }
-                        position={ [1.5, 0.75, 0.75] }
+                        font="./Montserrat_Bold.json"
+                        size={ 0.3 }
+                        height={ 0.1 }
+                        curveSegments={ 12 }
+                        position={ [2.5, 0.75, -1.75] }
                         rotation-y={ -1.25 }
-                        maxWidth={ 2 }
-                        textAlign="center"
                     >
-                        Заказать 3D в DigitalWand
-                    </Text>
-                    <meshBasicMaterial color="white" />
+                        {`Заказать 3D\nв DigitalWand\n«жмать»`}
+                        <meshStandardMaterial color="white" />
+                    </Text3D>
             </Float>
         </PresentationControls>
 
