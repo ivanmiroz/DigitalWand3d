@@ -1,5 +1,4 @@
 import { Text, Html, ContactShadows, PresentationControls, Environment, useGLTF, Float } from '@react-three/drei'
-import { log } from 'three/tsl'
 
 export default function Experience()
 {
@@ -51,17 +50,20 @@ export default function Experience()
                         <iframe src="https://digitalwand.ru/" />
                     </Html>
                 </primitive>
-                <Text
-                    onClick={ goDW }
-                    font="./Montserrat-Bold.woff"
-                    fontSize={ 0.35 }
-                    position={ [1.5, 0.75, 0.75] }
-                    rotation-y={ -1.25 }
-                    maxWidth={ 2 }
-                    textAlign="center"
-                >
-                    Заказать 3D в DigitalWand
-                </Text>
+                    <Text
+                        onPointerOver={() => document.body.style.cursor = 'pointer'}
+                        onPointerOut={() => document.body.style.cursor = 'auto'}
+                        onClick={ goDW }
+                        font="./Montserrat-Bold.woff"
+                        fontSize={ 0.35 }
+                        position={ [1.5, 0.75, 0.75] }
+                        rotation-y={ -1.25 }
+                        maxWidth={ 2 }
+                        textAlign="center"
+                    >
+                        Заказать 3D в DigitalWand
+                    </Text>
+                    <meshBasicMaterial color="white" />
             </Float>
         </PresentationControls>
 
