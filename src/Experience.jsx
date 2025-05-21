@@ -52,7 +52,7 @@ export default function Experience()
                 </primitive>
                     <Text
                         onPointerOver={() => document.body.style.cursor = 'pointer'}
-                        onPointerOut={() => document.body.style.cursor = 'auto'}
+                        onPointerOut={() => document.body.style.cursor = 'grab'}
                         onClick={ goDW }
                         font="./Montserrat-Bold.woff"
                         fontSize={ 0.35 }
